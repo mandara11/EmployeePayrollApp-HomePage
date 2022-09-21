@@ -27,8 +27,37 @@
             <div class="emp-detail-text">
                 Employee Details <div class="emp-count">10</div>
             </div>
-            <button><a href="PayRoll_form.html" class="add-button">Add User</a></button>
+            <button><a href="EmployeePayrollApp.html" class="add-button">Add User</a></button>
         </div>  <!-- header-content -->
+        <div class="table main">
+            <table id="table-display" class="table">
+                <!-- UC3: Ability to view Employee Payroll details in a Tabular Format.-->
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td><img class="profile" alt="" src="employee1.jpg">
+                    </td>
+                    <td>Narayan Mahadevan</td>
+                    <td>Male</td>
+                    <td><div class="dept-label">HR</div>
+                        <div class="dept-label">Finance</div></td>
+                    <td>300000</td>
+                    <td>1 Nov 2020</td>
+                    <td>
+                        <button onclick="remove(this)">Delete</button>
+                        <button onclick="edit(this)">Edit</button>
+                    </td>
+                </tr>
+            </table>
+        </div> <!-- table main-->
+    </div> <!-- main content -->
     </div>
 </body>
 
